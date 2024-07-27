@@ -3,9 +3,7 @@ require 'yaml'
 inventory = YAML.load_file(File.join(__dir__, 'inventory.yml'))
 
 vm_box = "hashicorp/bionic64"
-# default_interface = "Intel(R) Wi-Fi 6 AX201 160MHz"
-# default_interface = "Intel(R) Ethernet Connection (13) I219-LM"
-default_interface = "wlp3s0"
+default_interface = "wlp3s0" # edit this interface into your used interface
 
 
 Vagrant.configure("2") do |config|
